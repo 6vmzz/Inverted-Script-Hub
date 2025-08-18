@@ -1,41 +1,48 @@
-# Compiled Lua sources
-luac.out
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Inverted", "Ocean")
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+-- MAIN
+local Main = Window:NewTab("Just A Baseplate")
+local MainSection = Main:NewSection("Inverted Just A Baseplate Scripts")
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+MainSection:NewButton("veresus machine gun", "only for just a baseplate", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/inkdupe/hat-scripts/refs/heads/main/machinegun.lua"))()
+end)
 
-# Precompiled Headers
-*.gch
-*.pch
+MainSection:NewButton("Jab HUB VERESUS", "awesome", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/inkdupe/hat-scripts/refs/heads/main/JABhub", true))()
+end)
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+MainSection:NewButton("FE Tools", "only for just a baseplate", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/inkdupe/hat-scripts/refs/heads/main/customtools.lua"))()
+end)
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+MainSection:NewButton("Poop dog", "only for just a baseplate", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/inkdupe/hat-scripts/refs/heads/main/pooping_dog.lua"))()
+end)
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+MainSection:NewButton("Portal Gun", "only for just a baseplate", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/inkdupe/hat-scripts/refs/heads/main/portalgun.lua"))()
+end)
 
+MainSection:NewButton("Jiggle Physics", "only for just a baseplate", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/inkdupe/hat-scripts/refs/heads/main/physics.lua"))()
+end)
+
+-- Chat Bypassers
+local ChatBypassers = Window:NewTab("Chat Bypassers")
+local ChatBypassersSection = ChatBypassers:NewSection("Chat Bypassers")
+
+ChatBypassersSection:NewButton("UserCreated, Key Is: oncemore", "oncemore is key", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/randomizedcomponent/UC/refs/heads/main/3307468c285f4fe535fb5d87b4b053e6.lua"))()
+end)
+
+
+
+-- Hubs
+local Hubs = Window:NewTab("Hubs")
+local HubsSection = Hubs:NewSection("Hubs")
+
+HubsSection:NewButton("steal a brainrot awesome hub", "finds shit", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/nareskifilmov-sketch/ScriptByGnill/refs/heads/main/Code.txt'))()
+end)
