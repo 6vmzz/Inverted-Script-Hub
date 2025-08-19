@@ -53,3 +53,8 @@ game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("made by in
 
 -- Hubs
 local Hubs = Window:NewTab("Hubs")
+local HubsSection = Hubs:NewSection("Hubs")
+
+HubsSection:NewButton("Development", "A ROBLOX Hub.", function()
+    print("Clicked")
+end)
