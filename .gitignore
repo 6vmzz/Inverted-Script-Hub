@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Inverted Hub, 6vmzz.", "Sentinel")
+local Window = Library.CreateLib("Inverted Hub, 6vmzz.", "Midnight")
 
 -- MAIN
 local Main = Window:NewTab("Just A Baseplate")
@@ -36,8 +36,6 @@ local ChatBypassersSection = ChatBypassers:NewSection("Chat Bypassers")
 ChatBypassersSection:NewButton("UserCreated, Key Is: oncemore", "oncemore is key", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/randomizedcomponent/UC/refs/heads/main/3307468c285f4fe535fb5d87b4b053e6.lua"))()
 end)
-
-
 
 -- Hubs
 local StealABrainrot = Window:NewTab("Steal A Brainrot")
