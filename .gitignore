@@ -43,7 +43,7 @@ end)
 local StealABrainrot = Window:NewTab("Steal A Brainrot")
 local StealABrainrotSection = StealABrainrot:NewSection("Steal A Brainrot")
 
-StealABrainrotSection:NewButton("steal a brainrot awesome hub", "finds shit", function()
+StealABrainrotSection:NewButton("Brainrot Finder", "finds stuff", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/nareskifilmov-sketch/ScriptByGnill/refs/heads/main/Code.txt'))()
 end)
 
