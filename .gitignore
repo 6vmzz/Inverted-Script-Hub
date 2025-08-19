@@ -20,8 +20,8 @@ loadstring(game:HttpGet("https://gist.githubusercontent.com/MelonsStuff/78525269
 
 end)
 
-MainSection:NewButton("Patched", "only for just a baseplate", function()
-    
+MainSection:NewButton("Ban Chat", "only for just a baseplate", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/6vmzz/Account-Chat-Suspend/refs/heads/main/.gitignore"))()
 end)
 
 MainSection:NewButton("Portal Gun", "only for just a baseplate", function()
