@@ -5,23 +5,23 @@ local Window = Library.CreateLib("Inverted", "Ocean")
 local Main = Window:NewTab("Just A Baseplate")
 local MainSection = Main:NewSection("Inverted Just A Baseplate Scripts")
 
-MainSection:NewButton("Forsaken FE Coolkidd", "only for just a baseplate", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Something478/MyScripts/refs/heads/main/LocalThing.lua"))()
+MainSection:NewButton("veresus machine gun", "only for just a baseplate", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/inkdupe/hat-scripts/refs/heads/main/machinegun.lua"))()
 end)
 
-MainSection:NewButton("Fling Big Parts", "awesome", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/HilalWare-Official/adam-ak-ll-ism-yok/refs/heads/main/kod%20birle%C5%9Ftiriciiiii.luau",true))()
+MainSection:NewButton("Jab HUB VERESUS", "awesome", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/inkdupe/hat-scripts/refs/heads/main/JABhub", true))()
 end)
 
-MainSection:NewButton("Sword Script", "only for just a baseplate", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/HilalWare-Official/adam-ak-ll-ism-yok/refs/heads/main/patrickscript",true))()
+MainSection:NewButton("FE Tools", "only for just a baseplate", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/inkdupe/hat-scripts/refs/heads/main/customtools.lua"))()
 end)
 
-MainSection:NewButton("Fe Rectangles", "only for just a baseplate", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Just-a-baseplate.-Unlisted-FE-Rectangles-48392"))()
+MainSection:NewButton("Poop dog", "only for just a baseplate", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/inkdupe/hat-scripts/refs/heads/main/pooping_dog.lua"))()
 end)
 
-MainSection:NewButton("Veresus Portal Gun", "only for just a baseplate", function()
+MainSection:NewButton("Portal Gun", "only for just a baseplate", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/inkdupe/hat-scripts/refs/heads/main/portalgun.lua"))()
 end)
 
