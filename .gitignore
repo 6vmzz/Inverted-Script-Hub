@@ -21,7 +21,7 @@ loadstring(game:HttpGet("https://gist.githubusercontent.com/MelonsStuff/78525269
 end)
 
 MainSection:NewButton("Fe Noli Forsaken", "only for just a baseplate", function()
-    game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 17269952801 17269983359 17270001635 17269983359 17269952801 17269998373 17270178857 17375337078 17270178857 ")
+    game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 138364679836274, 106249329428811, 129462518582032, 131385506535381, 85392395166623, 74013526892143, 98099894849025, 83033503825226, 12850150835,")
 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/randomstring0/qwertys/refs/heads/main/qwerty0.lua"))()
 end)
