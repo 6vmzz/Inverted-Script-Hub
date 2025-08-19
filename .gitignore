@@ -40,9 +40,13 @@ end)
 
 
 -- Hubs
-local Hubs = Window:NewTab("Hubs")
-local HubsSection = Hubs:NewSection("Hubs")
+local StealABrainrot = Window:NewTab("Steal A Brainrot")
+local StealABrainrotSection = StealABrainrot:NewSection("Steal A Brainrot")
 
-HubsSection:NewButton("steal a brainrot awesome hub", "finds shit", function()
+StealABrainrotSection:NewButton("steal a brainrot awesome hub", "finds shit", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/nareskifilmov-sketch/ScriptByGnill/refs/heads/main/Code.txt'))()
+end)
+
+StealABrainrotSection:NewButton("Lennon Friends Hub", "idk lmaooo", function()
+    loadstring(game:HttpGet("https://pastefy.app/tnv9HqgJ/raw",true))()
 end)
