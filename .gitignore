@@ -55,6 +55,6 @@ game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("made by in
 local Hubs = Window:NewTab("Hubs")
 local HubsSection = Hubs:NewSection("Hubs")
 
-HubsSection:NewButton("Development", "A ROBLOX Hub.", function()
+HubsSection:NewButton("FE Player Hub", "A ROBLOX Hub.", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/6vmzz/E/refs/heads/main/.gitignore"))()
 end)
