@@ -48,10 +48,9 @@ game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna b
 game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
 game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
 game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels```
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("I'm feeling really angry and frustrated right now.")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("I'm feeling really angry and frustrated right now.")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("I'm feeling really angry and frustrated right now.")
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
 end)
 
 MainSection:NewButton("Portal Gun", "only for just a baseplate", function()
