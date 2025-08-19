@@ -20,8 +20,10 @@ loadstring(game:HttpGet("https://gist.githubusercontent.com/MelonsStuff/78525269
 
 end)
 
-MainSection:NewButton("Ban Chat", "only for just a baseplate", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/6vmzz/Account-Chat-Suspend/refs/heads/main/.gitignore"))()
+MainSection:NewButton("Fe Noli Forsaken", "only for just a baseplate", function()
+    game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-gh 17269952801 17269983359 17270001635 17269983359 17269952801 17269998373 17270178857 17375337078 17270178857 ")
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/randomstring0/qwertys/refs/heads/main/qwerty0.lua"))()
 end)
 
 MainSection:NewButton("Portal Gun", "only for just a baseplate", function()
