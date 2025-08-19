@@ -47,6 +47,6 @@ StealABrainrotSection:NewButton("Brainrot Finder", "finds stuff", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/nareskifilmov-sketch/ScriptByGnill/refs/heads/main/Code.txt'))()
 end)
 
-StealABrainrotSection:NewButton("Lennon Friends Hub", "idk lmaooo", function()
-    loadstring(game:HttpGet("https://pastefy.app/tnv9HqgJ/raw",true))()
+StealABrainrotSection:NewButton("BrainrotHub", "idk lmaooo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/spicy/main/Chilli.lua"))()
 end)
