@@ -50,3 +50,6 @@ StealABrainrotSection:NewButton("BrainrotHub", "idk lmaooo", function()
 end)
 
 game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("made by inverted NOW LOADING INVERTED HUB MUAHAHAHHAHAHAAH")
+
+-- Hubs
+local Hubs = Window:NewTab("Hubs")
