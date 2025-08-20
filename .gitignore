@@ -2,30 +2,65 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Inverted Hub, 6vmzz.", "Midnight")
 
--- Make entire hub draggable (works on mobile)
-for _, gui in pairs(game:GetService("CoreGui"):GetDescendants()) do
-    if gui:IsA("Frame") or gui:IsA("TextButton") or gui:IsA("ImageButton") then
-        pcall(function()
-            gui.Active = true
-            gui.Draggable = true
-        end)
+-- ✅ Universal drag function (works on mobile & PC)
+local UserInputService = game:GetService("UserInputService")
+
+local function makeDraggable(gui)
+    local dragging
+    local dragInput
+    local dragStart
+    local startPos
+
+    local function update(input)
+        local delta = input.Position - dragStart
+        gui.Position = UDim2.new(
+            startPos.X.Scale,
+            startPos.X.Offset + delta.X,
+            startPos.Y.Scale,
+            startPos.Y.Offset + delta.Y
+        )
     end
+
+    gui.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 
+        or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+            dragStart = input.Position
+            startPos = gui.Position
+
+            input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then
+                    dragging = false
+                end
+            end)
+        end
+    end)
+
+    gui.InputChanged:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseMovement 
+        or input.UserInputType == Enum.UserInputType.Touch then
+            dragInput = input
+        end
+    end)
+
+    UserInputService.InputChanged:Connect(function(input)
+        if input == dragInput and dragging then
+            update(input)
+        end
+    end)
 end
 
--- Function to scale buttons for mobile
-local function scaleButton(button)
-    if button:IsA("TextButton") then
-        button.TextScaled = true
-        button.TextWrapped = true
-        button.Size = UDim2.new(0.25, 0, 0.08, 0) -- Bigger for finger taps
-    end
-end
-
--- Watch UI for new buttons and apply scaling
-game:GetService("RunService").RenderStepped:Connect(function()
-    for _, gui in pairs(game:GetService("CoreGui"):GetDescendants()) do
-        if gui:IsA("TextButton") then
-            scaleButton(gui)
+-- Apply draggable to all KavoUI main frames
+task.spawn(function()
+    while task.wait(1) do
+        for _, gui in pairs(game:GetService("CoreGui"):GetChildren()) do
+            if gui:IsA("ScreenGui") then
+                for _, frame in pairs(gui:GetDescendants()) do
+                    if frame:IsA("Frame") and frame:FindFirstChildOfClass("TextLabel") then
+                        makeDraggable(frame) -- ✅ works on mobile & pc
+                    end
+                end
+            end
         end
     end
 end)
