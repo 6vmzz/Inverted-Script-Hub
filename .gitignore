@@ -72,12 +72,3 @@ local function jumpAction(actionName, inputState, inputObject)
     humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
   end
 end
-
--- Bind the jump action
-ContextActionService:BindAction(
-  "JumpAction",  -- Unique name for the action
-  jumpAction,    -- Function to execute when the action is triggered
-  true,          -- Create a touch button for mobile
-  Enum.KeyCode.Space, -- Keycode for PC
-  Enum.UserInputType.Touch -- InputType for mobile (touch)
-)
