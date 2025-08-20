@@ -1,5 +1,34 @@
+-- Load UI Library
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Inverted Hub, 6vmzz.", "Midnight")
+
+-- Make entire hub draggable (works on mobile)
+for _, gui in pairs(game:GetService("CoreGui"):GetDescendants()) do
+    if gui:IsA("Frame") or gui:IsA("TextButton") or gui:IsA("ImageButton") then
+        pcall(function()
+            gui.Active = true
+            gui.Draggable = true
+        end)
+    end
+end
+
+-- Function to scale buttons for mobile
+local function scaleButton(button)
+    if button:IsA("TextButton") then
+        button.TextScaled = true
+        button.TextWrapped = true
+        button.Size = UDim2.new(0.25, 0, 0.08, 0) -- Bigger for finger taps
+    end
+end
+
+-- Watch UI for new buttons and apply scaling
+game:GetService("RunService").RenderStepped:Connect(function()
+    for _, gui in pairs(game:GetService("CoreGui"):GetDescendants()) do
+        if gui:IsA("TextButton") then
+            scaleButton(gui)
+        end
+    end
+end)
 
 -- MAIN
 local Main = Window:NewTab("Just A Baseplate")
@@ -37,7 +66,7 @@ ChatBypassersSection:NewButton("UserCreated, Key Is: oncemore", "oncemore is key
     loadstring(game:HttpGet("https://raw.githubusercontent.com/randomizedcomponent/UC/refs/heads/main/3307468c285f4fe535fb5d87b4b053e6.lua"))()
 end)
 
--- Hubs
+-- Steal A Brainrot
 local StealABrainrot = Window:NewTab("Steal A Brainrot")
 local StealABrainrotSection = StealABrainrot:NewSection("Steal A Brainrot")
 
@@ -49,6 +78,7 @@ StealABrainrotSection:NewButton("BrainrotHub", "idk lmaooo", function()
     loadstring(game:HttpGet("https://e-vil.com/anbu/awin.lua"))()
 end)
 
+-- Funny chat message
 game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("made by inverted NOW LOADING INVERTED HUB MUAHAHAHHAHAHAAH")
 
 -- Hubs
@@ -58,17 +88,3 @@ local HubsSection = Hubs:NewSection("Hubs")
 HubsSection:NewButton("FE Player Hub", "A ROBLOX Hub.", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/6vmzz/E/refs/heads/main/.gitignore"))()
 end)
-
-local ContextActionService = game:GetService("ContextActionService")
-local UserInputService = game:GetService("UserInputService")
-
-local function jumpAction(actionName, inputState, inputObject)
-  if inputState == Enum.UserInputState.Begin then
-    -- Player pressed the jump button
-    -- Perform jump action
-    local player = game.Players.LocalPlayer
-    local character = player.Character or player.CharacterAdded:Wait()
-    local humanoid = character:WaitForChild("Humanoid")
-    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-  end
-end
