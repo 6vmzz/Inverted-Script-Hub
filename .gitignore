@@ -120,6 +120,7 @@ game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("made by in
 local Hubs = Window:NewTab("Hubs")
 local HubsSection = Hubs:NewSection("Hubs")
 
+-- ✅ Fixed: now points to a Lua file, not a .gitignore
 HubsSection:NewButton("FE Player Hub", "A ROBLOX Hub.", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/6vmzz/E/refs/heads/main/.gitignore"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/6vmzz/E/main/feplayerhub.lua"))()
 end)
