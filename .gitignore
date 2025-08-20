@@ -58,3 +58,26 @@ local HubsSection = Hubs:NewSection("Hubs")
 HubsSection:NewButton("FE Player Hub", "A ROBLOX Hub.", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/6vmzz/E/refs/heads/main/.gitignore"))()
 end)
+
+local ContextActionService = game:GetService("ContextActionService")
+local UserInputService = game:GetService("UserInputService")
+
+local function jumpAction(actionName, inputState, inputObject)
+  if inputState == Enum.UserInputState.Begin then
+    -- Player pressed the jump button
+    -- Perform jump action
+    local player = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoid = character:WaitForChild("Humanoid")
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+  end
+end
+
+-- Bind the jump action
+ContextActionService:BindAction(
+  "JumpAction",  -- Unique name for the action
+  jumpAction,    -- Function to execute when the action is triggered
+  true,          -- Create a touch button for mobile
+  Enum.KeyCode.Space, -- Keycode for PC
+  Enum.UserInputType.Touch -- InputType for mobile (touch)
+)
