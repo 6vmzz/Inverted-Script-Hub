@@ -13,7 +13,7 @@ MainSection:NewButton("FE Rectangles", "awesome", function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Just-a-baseplate.-Unlisted-FE-Rectangles-48392"))()
 end)
 
-MainSection:NewButton("6vmzz's Modded HatHub", "only for just a baseplate", function()
+MainSection:NewButton("HatHub Modded", "only for just a baseplate", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/inkdupe/hat-scripts/refs/heads/main/updatedhathub.lua"))()
 end)
 
